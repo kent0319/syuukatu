@@ -1,5 +1,25 @@
-<h1 class="index">リスト</h1>
-<ul>1社目
-  <li>会社名<input class="form-control" id="company_name" name="company[name]" type="text"></li>
-  <li>現時点</li>
-</ul>
+<div class="index">
+ <h1 class="list_index">リスト</h1>
+   <table class= "shame_index">
+     <tr>
+       <th>・1社目</th>
+       <th>会社名</th>
+       <th><input class="form-control_index" id="company_name_index" name="company[name]" type="text"></th>
+       <th><div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+          現時点
+          </button>
+          <ul class="dropdown-menu" role="menu">
+           　<li role="presentation"><a href="#">書類選考待ち</a></li>
+           　<li role="presentation"><a href="#">一次選考待ち</a></li>
+           　<li role="presentation"><a href="#">二次選考待ち</a></li>
+           　<li role="presentation"><a href="#">最終選考待ち</a></li>
+       　    <li role="presentation"><a href="#">見送り</a></li>
+       　    <li role="presentation"><a href="#">内定</a></li>
+          </ul>
+        </div>
+        </th>
+     </tr>
+  </table>
+</div>
+<%= link_to "about",about_path %>
