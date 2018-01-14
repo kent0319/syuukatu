@@ -1,0 +1,116 @@
+@import "bootstrap";
+
+/* application */
+
+body{
+background-color:palegoldenrod;
+}
+
+/* header */
+header {
+  h1{
+  border-radius:10px;
+  border: 2px solid #988686;
+  font-family: serif;
+  color: white;
+  background-color: #f58a0096;
+  margin: 5% 10% 5% 10%;
+  padding:2% 0;
+  text-align: center;
+    }
+}
+
+/* about */
+.syousai {
+  margin-left: 25%;
+  margin-right: 25%;
+  border-left: 6px solid #000000;
+  border-right: 6px solid #000000;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+
+}
+
+.sha-me {
+  padding:0 20% 0 25%;
+  font-size:30px;
+  margin: 20px 0 20px 0;
+}
+
+.list_about {
+  li{
+  list-style-type:none;
+  font-size:20px;
+  margin: 0 auto;
+  }
+}
+
+span {
+  padding:0 20% 0 25%;
+}
+
+.link-to_index{
+  margin-left: 65%;
+}
+
+
+
+/* index */
+
+.list_index {
+  margin-left: 25%;
+  margin-right: 25%;
+  border-left: 6px solid #000000;
+  border-right: 6px solid #000000;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+
+.shame_index {
+  margin:0 auto;
+}
+
+th {
+  padding:30px 5px 30px 5px;
+  font-size:20px;
+
+}
+
+#company_name_index{
+  width:400px;
+  height:26px;
+}
+
+.form-control {
+  margin-left: 25%;
+  margin-right: 25%;
+  width:500px;
+}
+
+#reason {
+  height:100px
+}
+
+
+
+/* footer */
+
+footer {
+  height:100px;
+  padding:25px 0 0 0;
+}
+
+
+footer {
+  a{
+    margin-left: 65%;
+  }
+}
+
+.footer_space {
+  font-size:20px;
+  text-align: center;
+}
