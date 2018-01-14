@@ -1,0 +1,22 @@
+<div class="index">
+ <div class="list_index">リスト</div>
+
+   <% if @microposts.present? %>
+
+    <table class= "shame_index">
+     <tr>
+      <th>企業数</th>
+      <th>企業名</th>
+     </tr>
+
+    <% @microposts.each do |micropost| %>
+     <tr>
+      <td><%= micropost.company_number %></td>
+      <td><%= micropost.company_name %></td>
+      <td><%= micropost.now %></td>
+      <td></td>
+     </tr>
+    <% end %>
+    </table>
+   <% end %>
+   <p>データがありません。新規作成してください。</p>
