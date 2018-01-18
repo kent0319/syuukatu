@@ -1,8 +1,7 @@
 Syuukatu::Application.routes.draw do
+  resources :microposts
   root "microposts#index"
-  match '/show',  to: "microposts#show",  via: 'get'
 
-  resource :microposts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
