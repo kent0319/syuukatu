@@ -1,13 +1,14 @@
-<div class="index">
- <div class="list_index">リスト</div>
-   <p><%= link_to "新規登録", :new_micropost %></p>
+
+ <div class="list_index">企業選考リスト
+ </div>
+   <p id="shinki_link"><%= link_to "新規登録", :new_micropost %></p>
    <% if @microposts.present? %>
 
     <table class= "shame_index">
      <tr>
-      <th>企業名</th>
-      <th>現時点</th>
-      <th>操作</th>
+      <th>企 業 名</th>
+      <th>現 時 点</th>
+      <th>操 作</th>
      </tr>
 
     <% @microposts.each do |micropost| %>

@@ -68,6 +68,14 @@ span {
 
 /* index */
 
+
+#shinki_link {
+  width:60px;
+  margin:10px 30% 10px 70%;
+
+}
+
+
 .list_index {
   margin-left: 25%;
   margin-right: 25%;
@@ -81,13 +89,24 @@ span {
 
 .shame_index {
   margin:0 auto;
+  th {
+    padding:30px 50px 30px 50px;
+    font-size:25px;
+  }
 }
 
-th {
-  padding:30px 5px 30px 5px;
-  font-size:20px;
 
+.shame_index {
+  margin:0 auto;
+  td {
+    padding:20px 30px 20px 30px;
+    font-size:20px;
+  }
 }
+
+
+
+
 
 #company_name_index{
   width:400px;
@@ -123,4 +142,51 @@ footer {
 .footer_space {
   font-size:20px;
   text-align: center;
+}
+
+
+/* new */
+.sinki {
+  margin-left: 25%;
+  margin-right: 25%;
+  border-left: 6px solid #000000;
+  border-right: 6px solid #000000;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+
+
+}
+
+#index_link_new{
+  width:60px;
+  margin:10px 30% 10px 70%;
+}
+
+
+/*form*/
+
+#form {
+  margin:auto;
+  tr{
+    padding:25px 0 25px 0;
+  }
+}
+
+
+/* edit */
+
+.hensyuu{
+  margin-left: 25%;
+  margin-right: 25%;
+  border-left: 6px solid #000000;
+  border-right: 6px solid #000000;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+#edit_link_show {
+  width:80px;
+  margin:10px 30% 10px 70%;
 }
