@@ -1,8 +1,13 @@
 <div class="about">
   <h1 class="syousai">企業詳細</h1>
-   <p><%= link_to "編集", [:edit, @micropost] %></p>
-   <p><%= link_to "企業一覧",root_path %></p>
-    <table>
+   <table>
+    <tr>
+      <th><%= link_to "編集", [:edit, @micropost] %></th>
+      <td><%= link_to "企業一覧",root_path %></td>
+    </tr>
+   </table>
+
+   <table>
      <tr>
        <th>企業名</th>
        <td><%= @micropost.company_name %></td>
