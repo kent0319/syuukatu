@@ -1,4 +1,9 @@
 Syuukatu::Application.routes.draw do
+  devise_for :users, :controllers => {
+      :registrations => "registrations"
+    }
+
+  resources :users,only: [:show]
   resources :microposts
   root "microposts#index"
 
