@@ -1,0 +1,28 @@
+
+ <div class="list_index">企業選考リスト
+ </div>
+   <p id="shinki_link"><%= link_to "新規登録", :new_micropost %></p>
+   <% if @microposts.present? %>
+
+    <table class= "shame_index">
+     <tr>
+      <th>企 業 名</th>
+      <th>現 時 点</th>
+      <th>操 作</th>
+     </tr>
+
+    <% @microposts.each do |micropost| %>
+     <tr>
+      <td><%= link_to micropost.company_name, micropost %></td>
+      <td><%= micropost.now %></td>
+      <td>
+          <%= link_to "編集", [:edit, micropost] %> |
+          <%= link_to "削除", micropost, method: :delete,
+                data: { confirm:"本当に削除しますか？"} %>
+      </td>
+     </tr>
+    <% end %>
+    </table>
+<% else %>
+   <p>データがありません。新規作成してください。</p>
+<% end %>

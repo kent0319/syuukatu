@@ -1,6 +1,12 @@
 Syuukatu::Application.routes.draw do
-  root "static_pages#index"
-  match '/about',  to: "static_pages#about",  via: 'get'
+  devise_for :users, :controllers => {
+      :registrations => "registrations"
+    }
+
+  resources :users,only: [:show]
+  resources :microposts
+  root "microposts#index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

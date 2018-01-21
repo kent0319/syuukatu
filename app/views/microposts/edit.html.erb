@@ -1,0 +1,7 @@
+<h1 class="hensyuu">編集</h1>
+
+<p id="edit_link_show"><%= link_to "詳細へ戻る", @micropost %></p>
+<%= form_for  @micropost do |form| %>
+<%= render "form", form:form %>
+<p><%= form.submit %></p>
+<% end %>

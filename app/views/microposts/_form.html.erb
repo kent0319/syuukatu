@@ -1,0 +1,42 @@
+
+<table id= "form">
+  <tr>
+    <th>企業名</th>
+    <td><%= form.text_field :company_name %></td>
+  </tr>
+  <tr>
+    <th>現時点</th>
+    <td>
+      <%= form.select :now,[["書類選考待ち","書類選考待ち"],[ "1次選考待ち","1次選考待ち"],["2次選考待ち","2次選考待ち"],
+      ["最終選考待ち","最終選考待ち"],["内定","内定"],["見送り","見送り"]]  %>
+    </td>
+  </tr>
+  <tr>
+    <th>設立年月日</th>
+    <td><%= form.date_select :company_date,start_year: 1900, end_year: Time.now.year,use_month_numbers: true %></td>
+  </tr>
+  <tr>
+      <th>従業員数</th>
+      <td><%= form.text_field :employee %></td>
+  </tr>
+  <tr>
+    <th>担当者</th>
+    <td><%= form.text_field :tantosya %></td>
+  </tr>
+  <tr>
+    <th>勤務地</th>
+    <td><%= form.text_field :place %></td>
+  </tr>
+  <tr>
+    <th>職種</th>
+    <td><%= form.text_field :occupations %></td>
+  </tr>
+  <tr>
+    <th>事業内容</th>
+    <td><%= form.text_field :content %></td>
+  </tr>
+  <tr>
+    <th>志望理由</th>
+    <td><%= form.text_area :reason, cols: 40, rows: 10 %></td>
+  </tr>
+</table>

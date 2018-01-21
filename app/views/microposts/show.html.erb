@@ -1,0 +1,48 @@
+<div class="about">
+  <h1 class="syousai">企業詳細</h1>
+   <table>
+    <tr>
+      <th><%= link_to "編集", [:edit, @micropost] %></th>
+      <td><%= link_to "企業一覧",root_path %></td>
+    </tr>
+   </table>
+
+   <table>
+     <tr>
+       <th>企業名</th>
+       <td><%= @micropost.company_name %></td>
+     </tr>
+     <tr>
+       <th>現時点</th>
+       <td><%= @micropost.now %></td>
+     </tr>
+     <tr>
+       <th>設立年月日</th>
+       <td><%= @micropost.company_date %></td>
+     </tr>
+     <tr>
+       <th>従業員数</th>
+       <td><%= @micropost.employee %></td>
+     </tr>
+     <tr>
+       <th>担当者</th>
+       <td><%= @micropost.tantosya %></td>
+     </tr>
+     <tr>
+       <th>勤務地</th>
+       <td><%= @micropost.place %></td>
+     </tr>
+     <tr>
+       <th>職種</th>
+       <td><%= @micropost.occupations %></td>
+     </tr>
+     <tr>
+       <th>事業内容</th>
+       <td><%= @micropost.content %></td>
+     </tr>
+     <tr>
+       <th>志望理由</th>
+       <td><%= @micropost.reason %></td>
+     </tr>
+   </table>
+</div>
